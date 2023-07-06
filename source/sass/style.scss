@@ -2,9 +2,17 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+//tabs
+@import "vendor/data-tabs.scss";
+@import "vendor/tabs.scss";
+
+//accordion
+@import "vendor/accordion.scss";
+@import "vendor/data-accordion.scss";
 // Swiper 7.4.1
 // @import "vendor/swiper";
-
+@import "vendor/swiper.scss";
 // Global
 // ---------------------------------
 

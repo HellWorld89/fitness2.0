@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
   // Modules
   // ---------------------------------
 
