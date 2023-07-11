@@ -18,36 +18,51 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-v16-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="preload" href="fonts/roboto-condensed-v25-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
+    <header class="main-header">
       <div class="container">
-        <section class=""></section>
+        <div class="main-header__wrapper">
+          <p class="main-header__logo">SUPERGYM</p><a class="main-header__phone title"
+            href="tel:88005555555">8-800-555-55-55</a>
+        </div>
+
+
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
           <div class="hero__wrapper">
-            <p class="hero__logo">supergym</p>
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="399px" height="82px">
-              <img class="hero__image" src="img/logo-mobile.svg" width="500px" height="556px"
-                alt="Спортивный мужчина в футболке с логотипом супермена.">
-            </picture>
-            <a href="tel:88005555555">8-800-555-55-55</a>
-            <p class="hero__city">омск</p>
-            <p class="hero__services">Тренажёрный зал
-              Групповые занятия
-              Кардио-зона </p>
-            <h1 class="hero__title">фитнес центр</h1>
-            <button class="btn">купить абонемент</button>
+            <div class="hero__box">
+              <p class="hero__city">омск</p>
+              <h1 class="hero__title">фитнес <br>центр</h1>
+              <p class="hero__services">Тренажёрный зал<br>
+                Групповые занятия<br>
+                Кардио-зона </p>
+              <button class="hero__button btn">купить абонемент</button>
+            </div>
+            <div class="hero__picture-box">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/desktop/hero_1200.jpg, img/catalog/desktop/hero_1200@2x.jpg" width="500px"
+                  height="556px">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="399px" height="82px">
+                <img class="hero__image" src="img/catalog/desktop/hero_1200.jpg"
+                  srcset="img/catalog/desktop/hero_1200@2x.jpg" width="500px" height="556px"
+                  alt="Спортивный мужчина в футболке с логотипом супермена.">
+              </picture>
+            </div>
+
+
+
+
           </div>
         </div>
       </section>
@@ -62,9 +77,12 @@
             <p class="gym__description">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
               Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             <picture>
-              <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="320px" height="313px">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/gym__1200.jpg, img/catalog/desktop/gym__1200@2x.jpg " width="660px"
+                height="401px">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="678px" height="345px">
-              <img class="hero__image" src="img/logo-mobile.svg" width="660px" height="401px" alt="Тренажерный зал.">
+              <img class="hero__image" src="img/catalog/desktop/gym__1200.jpg"
+                srcset="img/catalog/desktop/gym__1200@2x.jpg" width="660px" height="401px" alt="Тренажерный зал.">
             </picture>
             <div class="video">
               <!-- <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw"
@@ -77,7 +95,7 @@
       </section>
       <section class="season-tickets">
         <div class="container">
-          <h2 class="season-tickets__title">Абонементы</h2>
+          <h2 class="season-tickets__title title">Абонементы</h2>
           <div class="tabs" data-tabs="parent" data-delay="300" data-height="max">
             <div class="tabs__controls" data-tabs="controls">
               <button class="tabs__control is-active " type="button" data-tabs="control" data-index="0">1 месяц</button>
@@ -157,7 +175,7 @@
       <section class="super-games">
         <div class="container">
           <div class="super-games__wrapper">
-            <h2 class="super-games__title">super games</h2>
+            <h2 class="super-games__title title">super games</h2>
             <p class="super-games__subtitle">Дата</p>
             <span class="super-games__item">7 Марта 2019</span>
             <p class="super-games__subtitle">Время</p>
@@ -167,7 +185,9 @@
           </div>
           <div class="super-games__image-wrapper">
             <picture>
-              <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="320px" height="313px">
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/promo_1200.jpg, img/catalog/desktop/promo_1200@2x.jpg" width="660px"
+                height="500px">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="678px" height="345px">
               <img class="hero__image" src="img/logo-mobile.svg" width="660px" height="500px"
                 alt="Спортивный мужчина смотрит в кадр.">
@@ -176,41 +196,19 @@
       </section>
       <section class="coaches">
         <div class="container">
-          <h2 class="coaches__title">Тренеры</h2>
+          <h2 class="coaches__title title">Тренеры</h2>
           <div class="slider swiper">
             <ul class="slider__list swiper-wrapper">
               <li class="slider__item swiper-slide">
                 <div class="slider__item-inner">
                   <div class="slider__description-wrapper">
                     <picture>
-                      <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/catalog/desktop/photo_3_1200.jpg, img/catalog/desktop/photo_3_1200@2x.jpg"
+                        width="260px" height="294px">
                       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
-                      <img class="hero__image" src="img/logo-mobile.svg" width="260px" height="294px"
-                        alt="Анна Павлова.">
-                    </picture>
-                    <h2 class="slider__heading">Анна Павлова</h2>
-                    <span class="slider__badge">CrossFit</span>
-                    <ul class="slider__list">
-                      <li class="slider__item">
-                        <p class="slider__text">Certified Level 3 Trainer</p>
-                      </li>
-                      <li class="slider__item">
-                        <p class="slider__text">Победитель чемпионата России по CrossFit </p>
-                      </li>
-                      <li class="slider__item">
-                        <p class="slider__text">Опыт — 6 лет</p>
-                      </li>
-
-                    </ul>
-                  </div>
-              </li>
-              <li class="slider__item swiper-slide">
-                <div class="slider__item-inner">
-                  <div class="slider__description-wrapper">
-                    <picture>
-                      <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
-                      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
-                      <img class="hero__image" src="img/logo-mobile.svg" width="260px" height="294px"
+                      <img class="hero__image" src="img/catalog/desktop/photo_3_1200.jpg"
+                        srcset="img/catalog/desktop/photo_3_1200@2x.jpg" width="260px" height="294px"
                         alt="Алексей Лавров.">
                     </picture>
                     <h2 class="slider__heading">Алексей Лавров</h2>
@@ -233,9 +231,12 @@
                 <div class="slider__item-inner">
                   <div class="slider__description-wrapper">
                     <picture>
-                      <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/catalog/desktop/photo_2_1200.jpg, img/catalog/desktop/photo_2_1200@2x.jpg"
+                        width="260px" height="294px">
                       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
-                      <img class="hero__image" src="img/logo-mobile.svg" width="260px" height="294px"
+                      <img class="hero__image" src="img/catalog/desktop/photo_2_1200.jpg"
+                        srcset="img/catalog/desktop/photo_2_1200@2x.jpg" width="260px" height="294px"
                         alt="Мария Кетова.">
                     </picture>
                     <h2 class="slider__heading">Мария Кетова</h2>
@@ -258,9 +259,12 @@
                 <div class="slider__item-inner">
                   <div class="slider__description-wrapper">
                     <picture>
-                      <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/catalog/desktop/photo_1_1200.jpg, img/catalog/desktop/photo_1_1200@2x.jpg"
+                        width="260px" height="294px">
                       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
-                      <img class="hero__image" src="img/logo-mobile.svg" width="260px" height="294px"
+                      <img class="hero__image" src="img/catalog/desktop/photo_1_1200.jpg"
+                        srcset="img/catalog/desktop/photo_1_1200@2x.jpg" width="260px" height="294px"
                         alt="Александр Пашков.">
                     </picture>
                     <h2 class="slider__heading">Александр Пашков</h2>
@@ -283,9 +287,12 @@
                 <div class="slider__item-inner">
                   <div class="slider__description-wrapper">
                     <picture>
-                      <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/catalog/desktop/photo_4_1200.jpg, img/catalog/desktop/photo_4_1200@2x.jpg"
+                        width="260px" height="294px">
                       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
-                      <img class="hero__image" src="img/logo-mobile.svg" width="260px" height="294px"
+                      <img class="hero__image" src="img/catalog/desktop/photo_4_1200.jpg"
+                        srcset="img/catalog/desktop/photo_4_1200@2x.jpg" width="260px" height="294px"
                         alt="Анна Павлова.">
                     </picture>
                     <h2 class="slider__heading">Анна Павлова</h2>
@@ -308,9 +315,12 @@
                 <div class="slider__item-inner">
                   <div class="slider__description-wrapper">
                     <picture>
-                      <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/catalog/desktop/photo_3_1200.jpg, img/catalog/desktop/photo_3_1200@2x.jpg"
+                        width="260px" height="294px">
                       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
-                      <img class="hero__image" src="img/logo-mobile.svg" width="260px" height="294px"
+                      <img class="hero__image" src="img/catalog/desktop/photo_3_1200.jpg"
+                        srcset="img/catalog/desktop/photo_3_1200@2x.jpg" width="260px" height="294px"
                         alt="Алексей Лавров.">
                     </picture>
                     <h2 class="slider__heading">Алексей Лавров</h2>
@@ -333,9 +343,12 @@
                 <div class="slider__item-inner">
                   <div class="slider__description-wrapper">
                     <picture>
-                      <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/catalog/desktop/photo_2_1200.jpg, img/catalog/desktop/photo_2_1200@2x.jpg"
+                        width="260px" height="294px">
                       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
-                      <img class="hero__image" src="img/logo-mobile.svg" width="260px" height="294px"
+                      <img class="hero__image" src="img/catalog/desktop/photo_2_1200.jpg"
+                        srcset="img/catalog/desktop/photo_2_1200@2x.jpg" width="260px" height="294px"
                         alt="Мария Кетова.">
                     </picture>
                     <h2 class="slider__heading">Мария Кетова</h2>
@@ -358,12 +371,43 @@
                 <div class="slider__item-inner">
                   <div class="slider__description-wrapper">
                     <picture>
-                      <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
+                      <source media="(min-width: 1200px)"
+                        srcset="img/catalog/desktop/photo_1_1200.jpg, img/catalog/desktop/photo_1_1200@2x.jpg"
+                        width="260px" height="294px">
                       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
-                      <img class="hero__image" src="img/logo-mobile.svg" width="260px" height="294px"
+                      <img class="hero__image" src="img/catalog/desktop/photo_1_1200.jpg"
+                        srcset="img/catalog/desktop/photo_1_1200@2x.jpg" width="260px" height="294px"
                         alt="Александр Пашков.">
                     </picture>
                     <h2 class="slider__heading">Александр Пашков</h2>
+                    <span class="slider__badge">CrossFit</span>
+                    <ul class="slider__list">
+                      <li class="slider__item">
+                        <p class="slider__text">Certified Level 3 Trainer</p>
+                      </li>
+                      <li class="slider__item">
+                        <p class="slider__text">Победитель чемпионата России по CrossFit </p>
+                      </li>
+                      <li class="slider__item">
+                        <p class="slider__text">Опыт — 6 лет</p>
+                      </li>
+
+                    </ul>
+                  </div>
+              </li>
+              <li class="slider__item swiper-slide">
+                <div class="slider__item-inner">
+                  <div class="slider__description-wrapper">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/catalog/desktop/photo_4_1200.jpg, img/catalog/desktop/photo_4_1200@2x.jpg"
+                        width="260px" height="294px">
+                      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
+                      <img class="hero__image" src="img/catalog/desktop/photo_4_1200.jpg"
+                        srcset="img/catalog/desktop/photo_4_1200@2x.jpg" width="260px" height="294px"
+                        alt="Анна Павлова.">
+                    </picture>
+                    <h2 class="slider__heading">Анна Павлова</h2>
                     <span class="slider__badge">CrossFit</span>
                     <ul class="slider__list">
                       <li class="slider__item">
@@ -390,7 +434,7 @@
       </section>
       <section class="advantages">
         <div class="container">
-          <h2 class="advantages__title">Наши преимущества</h2>
+          <h2 class="advantages__title title">Наши преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
               <p class="advantages__number">900 </p>
@@ -427,7 +471,7 @@
       </section>
       <section class="event">
         <div class="container">
-          <h2 class="event__title">Акции</h2>
+          <h2 class="event__title title">Акции</h2>
           <div class="event__promo">
             <p class="event__subtitle">Год</p>
             <p class="event__price">4999</p>
@@ -448,7 +492,7 @@
       </section>
       <section class="faq">
         <div class="container">
-          <h2 class="faq__title">Вопросы и ответы</h2>
+          <h2 class="faq__title title">Вопросы и ответы</h2>
           <div class="tabs" data-tabs="parent" data-delay="300" data-height="max">
             <div class="tabs__controls" data-tabs="controls">
               <button class="tabs__control is-active " type="button" data-tabs="control" data-index="0">Центр</button>
@@ -686,7 +730,7 @@
       </section>
       <section class="reviews">
         <div class="container">
-          <h2 class="reviews__title">Отзывы</h2>
+          <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__slider swiper">
             <ul class="reviews__list swiper-wrapper">
               <li class="reviews__item swiper-slide">
@@ -714,7 +758,7 @@
 
               </li>
             </ul>
-            <div class="slider__arrows">
+            <div class="reviews__arrows slider">
               <button class="slider__arrow slider__arrow--left swiper-button-prev" type="button"></button>
               <button class="slider__arrow slider__arrow--right swiper-button-next" type="button"></button>
             </div>
@@ -724,7 +768,7 @@
       <section class="lesson">
         <div class="container">
           <div class="free-lesson">
-            <h2 class="free-lesson__title">Бесплатное занятие </h2>
+            <h2 class="free-lesson__title title">Бесплатное занятие </h2>
             <form action="">
               <label for="">
                 <input type="text" placeholder="Имя">
@@ -737,7 +781,7 @@
       </section>
       <section class="contacts">
         <div class="container">
-          <h2 class="contacts__title">Контакты</h2>
+          <h2 class="contacts__title title">Контакты</h2>
           <div class="contacts__address">
             <h3 class="contacts__caption">Адрес:</h3>
             <address class="contacts__text">г. Омск, ул. 60 лет Октября, 7</address>

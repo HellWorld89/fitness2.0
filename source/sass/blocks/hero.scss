@@ -1,0 +1,101 @@
+.hero {
+  width: 100%;
+  background: conic-gradient(from 145deg at  16% 39%, #003D85 32deg, #B80027 313deg, #003D85 360deg);
+}
+
+.hero__wrapper {
+
+  @media (min-width: $vp-1200) {
+    display: grid;
+    grid-template-columns: 443px 500px;
+    grid-template-areas:
+      "A B";
+    flex-wrap: wrap;
+    padding-top: 51px;
+    padding-bottom: 51px;
+
+  }
+
+  @media (min-width: $vp-768) {}
+
+  @media (min-width: $vp-320) {}
+}
+
+.hero__box {
+  display: grid;
+  grid-template-areas:
+    ". B"
+    "A C"
+    ". D";
+  grid-area: A;
+  align-self: center;
+  justify-self: center;
+}
+
+.hero__image {
+  margin: 0;
+  padding: 0;
+}
+
+.hero__city {
+  grid-area: B;
+  justify-self: center;
+  color: #FFF;
+  font-family: $ff-alumni;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__services {
+  grid-area: A;
+  align-self: center;
+  color: #FFF;
+  text-align: right;
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__picture-box {
+  grid-area: B;
+}
+
+.hero__title {
+  grid-area: C;
+  color: #FFF;
+  text-align: right;
+  font-family: $ff-alumni;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px 54px 104px 12px;
+}
+
+.hero__button {
+  grid-area: D;
+  border: 4px solid #fff;
+  color: #FFF;
+  font-family: $ff-roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;
+}

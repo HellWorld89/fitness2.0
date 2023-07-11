@@ -1,0 +1,38 @@
+.main-header {
+  position: relative;
+
+}
+
+.main-header__wrapper {
+  position: absolute;
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 30px;
+
+}
+
+.main-header__logo {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  font-family: $ff-alumni;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.main-header__phone {
+  color: #FFF;
+  font-family: $ff-alumni;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  margin: 0;
+  padding: 0;
+}
