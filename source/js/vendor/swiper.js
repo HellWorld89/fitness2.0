@@ -13,17 +13,17 @@ const swiper = new Swiper('.slider', {
   slidesPerView:4,
 });
 
-const swidper = new Swiper('.reviews__slider', {
-  loop: false,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  slidesPerView:1,
-});
+// const swiper = new Swiper('.reviews__slider', {
+//   loop: false,
+//   watchSlidesVisibility: true,
+//   watchSlidesProgress: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   slidesPerView:1,
+// });

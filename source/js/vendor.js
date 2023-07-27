@@ -1,11 +1,11 @@
 // Swiper 7.4.1
 import './vendor/swiper.js';
-import './vendor/focus-visible-polyfill';
+import './vendor/focus-visible-polyfill.js';
 
 // tabs
-import './vendor/tabs';
-import './vendor/init-tabs';
-import './vendor/index';
+import './vendor/tabs.js';
+import './vendor/init-tabs.js';
+import './vendor/index.js';
 
 // accordion
 import './vendor/accordions.js';

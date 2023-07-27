@@ -29,8 +29,8 @@
     <header class="main-header">
       <div class="container">
         <div class="main-header__wrapper">
-          <p class="main-header__logo">SUPERGYM</p><a class="main-header__phone title"
-            href="tel:88005555555">8-800-555-55-55</a>
+          <p>SUPERGYM</p>
+          <a href="tel:88005555555">8-800-555-55-55</a>
         </div>
 
 
@@ -41,19 +41,21 @@
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero__box">
-              <p class="hero__city">омск</p>
-              <h1 class="hero__title">фитнес <br>центр</h1>
-              <p class="hero__services">Тренажёрный зал<br>
+              <span>омск</span>
+              <h1>фитнес <br>центр</h1>
+              <p>Тренажёрный зал<br>
                 Групповые занятия<br>
                 Кардио-зона </p>
-              <button class="hero__button btn">купить абонемент</button>
+              <button class="btn btn--hero">купить абонемент</button>
             </div>
             <div class="hero__picture-box">
               <picture>
                 <source media="(min-width: 1200px)"
                   srcset="img/catalog/desktop/hero_1200.jpg, img/catalog/desktop/hero_1200@2x.jpg" width="500px"
                   height="556px">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="399px" height="82px">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/desktop/hero_1200.jpg, img/catalog/desktop/hero_1200@2x.jpg" width="324px"
+                  height="390px">
                 <img class="hero__image" src="img/catalog/desktop/hero_1200.jpg"
                   srcset="img/catalog/desktop/hero_1200@2x.jpg" width="500px" height="556px"
                   alt="Спортивный мужчина в футболке с логотипом супермена.">
@@ -69,29 +71,62 @@
       <section class="gym">
         <div class="container">
           <div class="gym__wrapper">
-            <h2 class="gym__title">Тренажерный зал</h2>
-            <span class="gym__subtitle">Просторный зал площадью 900 кв/м</span>
-            <p class="gym__description">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
-              тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
-            </p>
-            <p class="gym__description">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
-              Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/catalog/desktop/gym__1200.jpg, img/catalog/desktop/gym__1200@2x.jpg " width="660px"
-                height="401px">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="678px" height="345px">
-              <img class="hero__image" src="img/catalog/desktop/gym__1200.jpg"
-                srcset="img/catalog/desktop/gym__1200@2x.jpg" width="660px" height="401px" alt="Тренажерный зал.">
-            </picture>
-            <div class="video">
-              <!-- <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe> -->
-              <button class="video__play"></button>
+            <div class="gym__content-box">
+              <h2>Тренажерный зал</h2>
+              <span>Просторный зал площадью 900 кв/м</span>
+              <div class="gym__content-inner">
+                <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
+                  тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+                  спортсменов.
+                </p>
+                <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
+                  Также в фитнес центре есть несколько оборудованных залов для различных видов групповых
+                  занятий.</p>
+              </div>
+
+            </div>
+            <div class="gym__image-box">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog/desktop/gym__1200.jpg, img/catalog/desktop/gym__1200@2x.jpg" width="660px"
+                  height="401px">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/desktop/gym__1200.jpg, img/catalog/desktop/gym__1200@2x.jpg" width="678px"
+                  height="345px">
+                <img class="gym__image" src="img/catalog/mobile/gym__320.jpg"
+                  srcset="img/catalog/mobile/gym__320@2x.jpg" width="320px" height="313px" alt="Тренажерный зал.">
+              </picture>
+
             </div>
           </div>
+          <div class="gym__video">
+           <video controls src="video/free_courses.mp4" muted="muted"  width="364" height="228px" poster="img/catalog/desktop/gym__1200.jpg">
+            <source src="video/free_courses.mp4" type="video/mp4">
+            <source src="video/free_courses.ogg" type="video/ogg">
+            <source src="video/free_courses.webm" type="video/webm">
+            <p> Браузер не поддерживает</p>
+           </video>
+
+          </div>
+          <!-- <button class="gym__video-play">
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_293)" stroke-opacity="0.2" stroke-width="2" />
+              <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_1_293)" />
+              <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
+              <defs>
+                <linearGradient id="paint0_linear_1_293" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ED0233" />
+                  <stop offset="1" stop-color="#003EB7" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_1_293" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#003D85" />
+                  <stop offset="0.885417" stop-color="#B80027" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </button> -->
       </section>
       <section class="season-tickets">
         <div class="container">
@@ -731,9 +766,9 @@
       <section class="reviews">
         <div class="container">
           <h2 class="reviews__title title">Отзывы</h2>
-          <div class="reviews__slider swiper">
-            <ul class="reviews__list swiper-wrapper">
-              <li class="reviews__item swiper-slide">
+          <div class="slider swiper">
+            <ul class="slider__list swiper-wrapper">
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
                   <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
@@ -745,7 +780,7 @@
                   дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
 
               </li>
-              <li class="reviews__item swiper-slide">
+              <li class="slider__item swiper-slide">
                 <picture>
                   <source media="(min-width: 320px)" srcset="img/logo-tablet.svg" width="226px" height="274px">
                   <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="268px" height="294px">
@@ -758,7 +793,7 @@
 
               </li>
             </ul>
-            <div class="reviews__arrows slider">
+            <div class="slider__arrows">
               <button class="slider__arrow slider__arrow--left swiper-button-prev" type="button"></button>
               <button class="slider__arrow slider__arrow--right swiper-button-next" type="button"></button>
             </div>

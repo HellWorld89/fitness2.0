@@ -1,0 +1,193 @@
+.gym {
+  @include vp-1200 {
+    width: 100%;
+  }
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {}
+}
+
+.gym__wrapper {
+  @include vp-1200 {
+    display: grid;
+    grid-template-columns: 500px 660px;
+    align-self: center;
+    justify-self: center;
+    padding-top: 120px;
+    padding-bottom: 235px;
+  }
+
+  @include vp-1199 {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 183px
+  }
+
+  @include vp-767 {}
+}
+
+.gym__content-box {
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-right: 90px;
+  }
+
+  @include vp-1199 {
+    padding-right: 0;
+  }
+
+  @include vp-767 {}
+}
+
+.gym__content-box h2 {
+  margin: 0;
+
+  @include vp-1200 {
+    color: #102654;
+    font-family: $ff-alumni;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    padding-bottom: 25px;
+  }
+
+  @include vp-1199 {
+    color: #102654;
+    font-family: $ff-alumni;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {}
+}
+
+.gym__content-inner {
+  @include vp-1200 {
+    padding-top: 55px;
+  }
+
+  @include vp-1199 {
+    width: 580px;
+  }
+
+  @include vp-767 {}
+}
+
+.gym__content-box span {
+  margin: 0;
+
+  @include vp-1200 {
+    color: #102654;
+    font-family: $ff-roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @include vp-1199 {
+    color: #102654;
+    font-family: $ff-roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-bottom: 50px;
+  }
+
+  @include vp-767 {}
+}
+
+.gym__content-box p {
+  margin: 0;
+
+  @include vp-1200 {
+    color: #102654;
+    font-family: $ff-roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+  }
+
+  @include vp-1199 {
+    color: #102654;
+    text-align: center;
+    font-family: $ff-roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    padding-bottom: 50px;
+  }
+
+  // @include vp-767 {}
+}
+
+.gym__content-box p:nth-child(2) {
+  @include vp-1199 {
+    display: none;
+  }
+
+  @include vp-767 {}
+}
+
+.gym__content-inner {
+  @include vp-1199 {}
+
+  @include vp-767 {}
+}
+
+.gym__image-box {
+
+
+  @include vp-1200 {}
+
+  @include vp-1199 {}
+
+  @include vp-767 {}
+}
+
+
+.gym__video {
+
+  @include vp-1200 {
+    position: absolute;
+    width: 364px;
+    height: 228px;
+    top: 54%;
+    left: 41%;
+  }
+
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+    position: absolute;
+    top: 78%;
+    left: 39%;
+  }
+
+  @include vp-767 {}
+
+  // .gym__video-play {
+  //   @include vp-1200 {
+  //     position: absolute;
+  //   }
+
+  //   @include vp-1199 {}
+
+  //   @include vp-767 {}
+  // }
+}
