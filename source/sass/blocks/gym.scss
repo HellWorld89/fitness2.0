@@ -7,7 +7,9 @@
     width: 100%;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .gym__wrapper {
@@ -26,23 +28,35 @@
     padding-bottom: 183px
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 40px
+  }
 }
 
 .gym__content-box {
+  @include vp-1200 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 40px;
+  }
+
   @include vp-1199 {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    padding-right: 90px;
-  }
-
-  @include vp-1199 {
     padding-right: 0;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    align-items: start;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 .gym__content-box h2 {
@@ -81,7 +95,9 @@
     width: 580px;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    width: 272px;
+  }
 }
 
 .gym__content-box span {
@@ -99,7 +115,7 @@
   @include vp-1199 {
     color: #102654;
     font-family: $ff-roboto;
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -125,14 +141,17 @@
     color: #102654;
     text-align: center;
     font-family: $ff-roboto;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
     padding-bottom: 50px;
   }
 
-  // @include vp-767 {}
+  @include vp-767 {
+    padding-bottom: 40px;
+    text-align: start;
+  }
 }
 
 .gym__content-box p:nth-child(2) {
@@ -143,43 +162,69 @@
   @include vp-767 {}
 }
 
-.gym__content-inner {
-  @include vp-1199 {}
-
-  @include vp-767 {}
-}
-
 .gym__image-box {
+  @include vp-1200 {
+    background-image: url("/img/catalog/desktop/gym_1200.jpg");
+    background-repeat: no-repeat;
+    background-color: #102654;
+    width: 660px;
+    height: 401px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/catalog/desktop/gym_1200@2x.jpg");
+      background-size: contain;
+    }
+  }
 
-  @include vp-1200 {}
+  @include vp-1199 {
+    background-image: url("/img/catalog/tablet/gym_768.jpg");
+    background-repeat: no-repeat;
+    background-color: #102654;
+    width: 678px;
+    height: 345px;
 
-  @include vp-1199 {}
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/catalog/tablet/gym_768@2x.jpg");
+      background-size: contain;
+    }
+  }
 
-  @include vp-767 {}
+  @include vp-767 {
+    background-image: url("/img/catalog/mobile/gym_320.jpg");
+    background-repeat: no-repeat;
+    background-color: #102654;
+    width: 320px;
+    height: 313px;
+    margin-bottom: 40px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/catalog/mobile/gym_320@2x.jpg");
+      background-size: contain;
+    }
+  }
 }
-
 
 .gym__video {
-
   @include vp-1200 {
     position: absolute;
     width: 364px;
     height: 228px;
     top: 54%;
-    left: 41%;
+    left: 37%;
   }
-
 
   @include vp-1199 {
     width: 266px;
     height: 167px;
     position: absolute;
-    top: 78%;
-    left: 39%;
+    top: 69%;
+    left: 30%;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    position: static;
+    width: 320px;
+  }
 
   // .gym__video-play {
   //   @include vp-1200 {

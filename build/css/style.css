@@ -1597,6 +1597,11 @@ button,
     margin: 0 auto;
     position: relative;
   }
+  .container--hero {
+    width: 320px;
+    max-width: 320px;
+    margin: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2874,6 +2879,12 @@ button,
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .gym {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1200px) {
   .gym__wrapper {
     display: -ms-grid;
@@ -2895,6 +2906,30 @@ button,
     padding-bottom: 183px;
   }
 }
+@media (max-width: 767px) {
+  .gym__wrapper {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gym__content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 50px;
+    padding-left: 40px;
+  }
+}
 @media (max-width: 1199px) {
   .gym__content-box {
     display: -webkit-box;
@@ -2908,14 +2943,19 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 90px;
-  }
-}
-@media (max-width: 1199px) {
-  .gym__content-box {
     padding-right: 0;
   }
 }
+@media (max-width: 767px) {
+  .gym__content-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 .gym__content-box h2 {
   margin: 0;
 }
@@ -2952,6 +2992,12 @@ button,
     width: 580px;
   }
 }
+@media (max-width: 767px) {
+  .gym__content-inner {
+    width: 272px;
+  }
+}
+
 .gym__content-box span {
   margin: 0;
 }
@@ -2969,7 +3015,7 @@ button,
   .gym__content-box span {
     color: #102654;
     font-family: "Roboto-Condensed", "Arial", sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -2994,11 +3040,17 @@ button,
     color: #102654;
     text-align: center;
     font-family: "Roboto-Condensed", "Arial", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: 150%;
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__content-box p {
+    padding-bottom: 40px;
+    text-align: start;
   }
 }
 
@@ -3008,12 +3060,59 @@ button,
   }
 }
 @media (min-width: 1200px) {
+  .gym__image-box {
+    background-image: url("/img/catalog/desktop/gym_1200.jpg");
+    background-repeat: no-repeat;
+    background-color: #102654;
+    width: 660px;
+    height: 401px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gym__image-box {
+    background-image: url("/img/catalog/desktop/gym_1200@2x.jpg");
+    background-size: contain;
+  }
+}
+@media (max-width: 1199px) {
+  .gym__image-box {
+    background-image: url("/img/catalog/tablet/gym_768.jpg");
+    background-repeat: no-repeat;
+    background-color: #102654;
+    width: 678px;
+    height: 345px;
+  }
+}
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .gym__image-box {
+    background-image: url("/img/catalog/tablet/gym_768@2x.jpg");
+    background-size: contain;
+  }
+}
+@media (max-width: 767px) {
+  .gym__image-box {
+    background-image: url("/img/catalog/mobile/gym_320.jpg");
+    background-repeat: no-repeat;
+    background-color: #102654;
+    width: 320px;
+    height: 313px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+  .gym__image-box {
+    background-image: url("/img/catalog/mobile/gym_320@2x.jpg");
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1200px) {
   .gym__video {
     position: absolute;
     width: 364px;
     height: 228px;
     top: 54%;
-    left: 41%;
+    left: 37%;
   }
 }
 @media (max-width: 1199px) {
@@ -3021,10 +3120,17 @@ button,
     width: 266px;
     height: 167px;
     position: absolute;
-    top: 78%;
-    left: 39%;
+    top: 69%;
+    left: 30%;
   }
 }
+@media (max-width: 767px) {
+  .gym__video {
+    position: static;
+    width: 320px;
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

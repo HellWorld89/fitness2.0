@@ -19,5 +19,11 @@
     max-width: 290px;
     margin: 0 auto;
     position: relative;
+
+    &--hero {
+      width: 320px;
+      max-width: 320px;
+      margin: 0;
+    }
   }
 }
