@@ -5,7 +5,7 @@
 
 //tabs
 @import "vendor/data-tabs.scss";
-@import "vendor/tabs.scss";
+
 
 //accordion
 @import "vendor/accordion.scss";
@@ -25,7 +25,7 @@
 
 // Blocks
 // ---------------------------------
-
+@import "blocks/tabs.scss";
 @import "blocks/btn";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
@@ -33,6 +33,7 @@
 @import "blocks/main-header.scss";
 @import "blocks/hero.scss";
 @import "blocks/gym.scss";
+@import "blocks/season-tickets.scss";
 // @import "blocks/title.scss";
 // ---------------------------------
 

@@ -24,6 +24,27 @@
       background: transparent;
     }
 
+
+
+    &--tickets {
+      color: #102654;
+      font-family: $ff-roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      border: 2px solid #102654;
+      padding: 27px 44px;
+    }
+
+    &--gradient {
+      background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+      color: #FFF;
+      border: none;
+    }
+
     @include hover-focus {
       opacity: 0.8;
     }
@@ -53,6 +74,25 @@
       text-decoration: none;
       background: transparent;
     }
+
+    &--tickets {
+      color: #102654;
+      font-family: $ff-roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      border: 2px solid #102654;
+      padding: 27px 44px;
+    }
+
+    &--gradient {
+      background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+      color: #FFF;
+      border: none;
+    }
   }
 
   @include vp-767 {
@@ -78,6 +118,25 @@
       text-transform: uppercase;
       text-decoration: none;
       background: transparent;
+    }
+
+    &--tickets {
+      color: #102654;
+      font-family: $ff-roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      border: 2px solid #102654;
+      padding: 27px 44px;
+    }
+
+    &--gradient {
+      background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+      color: #FFF;
+      border: none;
     }
   }
 
