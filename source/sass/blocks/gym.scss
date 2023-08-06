@@ -164,33 +164,33 @@
 
 .gym__image-box {
   @include vp-1200 {
-    background-image: url("/img/catalog/desktop/gym_1200.jpg");
+    background-image: url("../img/catalog/desktop/gym_1200.jpg");
     background-repeat: no-repeat;
     background-color: #102654;
     width: 660px;
     height: 401px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/catalog/desktop/gym_1200@2x.jpg");
+      background-image: url("../img/catalog/desktop/gym_1200@2x.jpg");
       background-size: contain;
     }
   }
 
   @include vp-1199 {
-    background-image: url("/img/catalog/tablet/gym_768.jpg");
+    background-image: url("../img/catalog/tablet/gym_768.jpg");
     background-repeat: no-repeat;
     background-color: #102654;
     width: 678px;
     height: 345px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/catalog/tablet/gym_768@2x.jpg");
+      background-image: url("../img/catalog/tablet/gym_768@2x.jpg");
       background-size: contain;
     }
   }
 
   @include vp-767 {
-    background-image: url("/img/catalog/mobile/gym_320.jpg");
+    background-image: url("../img/catalog/mobile/gym_320.jpg");
     background-repeat: no-repeat;
     background-color: #102654;
     width: 320px;
@@ -198,7 +198,7 @@
     margin-bottom: 40px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/catalog/mobile/gym_320@2x.jpg");
+      background-image: url("../img/catalog/mobile/gym_320@2x.jpg");
       background-size: contain;
     }
   }

@@ -45,6 +45,21 @@
       border: none;
     }
 
+    &--super {
+      color: #FFF;
+      font-family: $ff-roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      width: 343px;
+      border: 4px solid #FFF;
+      padding: 29px;
+      grid-area: X;
+    }
+
     @include hover-focus {
       opacity: 0.8;
     }
@@ -92,6 +107,12 @@
       background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
       color: #FFF;
       border: none;
+    }
+
+    &--super {
+      width: 343px;
+      height: 67px;
+      border: 4px solid #FFF;
     }
   }
 
