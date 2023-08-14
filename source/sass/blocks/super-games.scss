@@ -13,17 +13,33 @@
     background: #ED0233;
     display: grid;
     grid-template-areas:
-    ". . B ."
-    ". A D ."
-    ". A E ."
-    ". A G ."
-    ". Y Y Y"
-    ". X X X"
-    ". . . .";
+      ". . B ."
+      ". A D ."
+      ". A E ."
+      ". A G ."
+      ". Y Y ."
+      ". X X ."
+      ". . . .";
     grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 78px 202px 140px 80px
   }
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    width: 292px;
+    height: 292px;
+    background: #ED0233;
+    display: grid;
+    grid-template-areas:
+      ". . B ."
+      ". A D ."
+      ". A E ."
+      ". G G ."
+      ". Y Y ."
+      ". X X ."
+      ". . . .";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 45px 117px 85px 45px
+  }
 
   @include vp-767 {}
 }
@@ -34,9 +50,16 @@
     justify-content: center;
   }
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    display: flex;
+    justify-content: center;
+  }
 
-  @include vp-767 {}
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .super-games h2 {
@@ -56,7 +79,17 @@
     grid-area: A;
   }
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    color: #FFF;
+    text-align: center;
+    font-family: $ff-alumni;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 96%;
+    letter-spacing: 1.44px;
+    grid-area: A;
+  }
 
   @include vp-767 {}
 }
@@ -73,14 +106,45 @@
     font-weight: 400;
     line-height: 150%;
     grid-area: B;
+    align-self: end;
+    justify-self: center;
   }
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    grid-area: B;
+    align-self: end;
+    justify-self: center;
+  }
 
   @include vp-767 {}
 }
 
-.super-games p:nth-child(3) {
+.super-games__block {
+  @include vp-1200 {
+    display: flex;
+    grid-area: D;
+    align-items: center;
+    justify-content: end;
+  }
+
+  @include vp-1199 {
+    display: flex;
+    grid-area: D;
+    align-items: center;
+    justify-content: end;
+  }
+
+  @include vp-767 {}
+
+}
+
+.super-games__block p:nth-child(1) {
   margin: 0;
   padding: 0;
 
@@ -91,10 +155,44 @@
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
-    grid-area: D;
+
   }
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  @include vp-767 {}
+}
+
+.super-games__block p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+
+  @include vp-1200 {
+    padding: 14px;
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  @include vp-1199 {
+    padding: 14px;
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
 
   @include vp-767 {}
 }
@@ -106,14 +204,26 @@
   @include vp-1200 {
     color: #FFF;
     font-family: $ff-roboto;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    grid-area: D;
+    grid-area: E;
+    align-self: end;
+    justify-self: center;
   }
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    grid-area: E;
+    align-self: end;
+    justify-self: center;
+  }
 
   @include vp-767 {}
 }
@@ -125,38 +235,29 @@
   @include vp-1200 {
     color: #FFF;
     font-family: $ff-roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    grid-area: E;
-  }
-
-  @include vp-1199 {}
-
-  @include vp-767 {}
-}
-
-.super-games p:nth-child(6) {
-  margin: 0;
-  padding: 0;
-
-  @include vp-1200 {
-    color: #FFF;
-    font-family: $ff-roboto;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
     grid-area: G;
+    justify-self: end;
   }
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    grid-area: G;
+    justify-self: end;
+  }
 
   @include vp-767 {}
 }
 
-.super-games p:nth-child(7) {
+.super-games p:nth-child(6) {
   margin: 0;
   padding: 0;
 
@@ -170,7 +271,16 @@
     grid-area: Y;
   }
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    grid-area: Y;
+    justify-self: end;
+  }
 
   @include vp-767 {}
 }
