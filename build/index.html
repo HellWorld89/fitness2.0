@@ -27,51 +27,49 @@
 <body>
   <div class="wrapper">
     <header class="main-header">
-      <div class="container">
-        <div class="main-header__wrapper">
-          <p>SUPERGYM</p>
-          <a href="tel:88005555555">8-800-555-55-55</a>
+      <div class="main-header__wrapper">
+        <a class="main-header__link" href="#">
+          <img class="main-header__logo" src="./img/supergym-logo.svg" alt="Логотип Supergym.">
+        </a>
+        <div class="main-header__phone-wrapper">
+          <a href="tel:88005555555">8-800-555-55-55
+          </a>
         </div>
-
 
       </div>
     </header>
-    <main>
+    <main class="main-index">
       <section class="hero">
-        <div class="container">
-          <div class="hero__wrapper">
-            <div class="hero__box">
-              <span>омск</span>
-              <h1>фитнес <br>центр</h1>
-              <p>Тренажёрный зал<br>
-                Групповые занятия<br>
-                Кардио-зона </p>
-              <button class="btn btn--hero">купить абонемент</button>
-            </div>
-            <div class="hero__picture-box">
-              <picture>
-                <source media="(min-width: 1200px)"
-                  srcset="img/catalog/desktop/hero_1200.jpg, img/catalog/desktop/hero_1200@2x.jpg" width="500px"
-                  height="556px">
-                <source media="(min-width: 768px)"
-                  srcset="img/catalog/desktop/hero_1200.jpg, img/catalog/desktop/hero_1200@2x.jpg" width="324px"
-                  height="390px">
-                <img class="hero__image" src="img/catalog/desktop/hero_1200.jpg"
-                  srcset="img/catalog/desktop/hero_1200@2x.jpg" width="500px" height="556px"
-                  alt="Спортивный мужчина в футболке с логотипом супермена.">
-              </picture>
-            </div>
-
+        <div class="hero__wrapper">
+          <div class="hero__box">
+            <span>омск</span>
+            <h1>Фитнес <br>центр</h1>
+            <p>Тренажёрный зал<br>
+              Групповые занятия<br>
+              Кардио-зона </p>
+            <button class="btn btn--hero">купить абонемент</button>
           </div>
+          <div class="hero__picture-box">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/desktop/hero_1200.jpg, img/catalog/desktop/hero_1200@2x.jpg" width="500px"
+                height="556px">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/tablet/hero_768.jpg, img/catalog/tablet/hero_768@2x.jpg" width="324px"
+                height="390px">
+              <img class="hero__image" src="img/catalog/desktop/hero_1200.jpg"
+                srcset="img/catalog/desktop/hero_1200@2x.jpg" width="500px" height="556px"
+                alt="Спортивный мужчина в футболке с логотипом супермена.">
+            </picture>
+          </div>
+
         </div>
       </section>
       <section class="gym">
-        <div class="container container--hero">
           <div class="gym__wrapper">
             <div class="gym__content-box">
               <h2>Тренажерный зал</h2>
               <span>Просторный зал площадью 900 кв/м</span>
-              <div class="gym__content-inner">
                 <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления
                   тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
                   спортсменов.
@@ -79,24 +77,24 @@
                 <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
                   Также в фитнес центре есть несколько оборудованных залов для различных видов групповых
                   занятий.</p>
-              </div>
-
             </div>
             <div class="gym__image-box">
             </div>
             <div class="gym__video">
-              <video controls src="video/free_courses.mp4" muted="muted" width="364" height="228px"
+              <video controls src="video/free_courses.mp4" width="364" height="228px"
                 poster="img/catalog/desktop/cover.jpg">
                 <source src="video/free_courses.mp4" type="video/mp4">
                 <source src="video/free_courses.ogg" type="video/ogg">
                 <source src="video/free_courses.webm" type="video/webm">
                 <p> Браузер не поддерживает</p>
               </video>
-
+              <button onclick="playVid()" class="gym__video-button" type="button">
+                <span class="visually-hidden">Запустить видео.</span>
+              </button>
             </div>
           </div>
       </section>
-      <section class="season-tickets">
+      <!-- <section class="season-tickets">
         <div class="container">
           <div class="season-tickets__wrapper">
             <h2 class="season-tickets__title">Абонементы</h2>
@@ -197,8 +195,8 @@
             <img class="season-tickets__image" src="img/catalog/desktop/rogue_1200.png"
               srcset="img/catalog/desktop/rogue_1200@2x.png" width="500px" height="556px" alt="Блины.">
           </picture>
-      </section>
-      <section class="super-games">
+      </section> -->
+      <!-- <section class="super-games">
         <div class="container">
           <div class="super-games__inner">
             <div class="super-games__promo-wrapper">
@@ -228,8 +226,8 @@
             </div>
           </div>
 
-      </section>
-      <section class="coaches">
+      </section> -->
+      <!-- <section class="coaches">
         <div class="container">
           <h2 class="coaches__title title">Тренеры</h2>
           <div class="slider swiper">
@@ -466,8 +464,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="advantages">
+      </section> -->
+      <!-- <section class="advantages">
         <div class="container">
           <h2 class="advantages__title title">Наши преимущества</h2>
           <ul class="advantages__list">
@@ -503,8 +501,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="event">
+      </section> -->
+      <!-- <section class="event">
         <div class="container">
           <h2 class="event__title title">Акции</h2>
           <div class="event__promo">
@@ -524,8 +522,8 @@
             <a class="event__button event__button--content" href="#">подробнее</a>
           </div>
         </div>
-      </section>
-      <section class="faq">
+      </section> -->
+      <!-- <section class="faq">
         <div class="container">
           <h2 class="faq__title title">Вопросы и ответы</h2>
           <div class="tabs" data-tabs="parent" data-delay="300" data-height="max">
@@ -762,8 +760,8 @@
                   </div>
                 </div>
               </div>
-      </section>
-      <section class="reviews">
+      </section> -->
+      <!-- <section class="reviews">
         <div class="container">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="slider swiper">
@@ -799,8 +797,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="lesson">
+      </section> -->
+      <!-- <section class="lesson">
         <div class="container">
           <div class="free-lesson">
             <h2 class="free-lesson__title title">Бесплатное занятие </h2>
@@ -812,9 +810,9 @@
               <button class="free-lesson__button btn" type="submit">отправить</button>
             </form>
           </div>
-        </div>
+        </div> -->
       </section>
-      <section class="contacts">
+      <!-- <section class="contacts">
         <div class="container">
           <h2 class="contacts__title title">Контакты</h2>
           <div class="contacts__address">
@@ -834,72 +832,72 @@
             <a class="contacts__text" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
           </div>
         </div>
-      </section>
+      </section> -->
   </div>
 
 
-  </main>
-  <footer class="main-footer">
-    <div class="container">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__logo-wrapper">
-          <a class="main-footer__logo">supergym</a>
-        </div>
-        <div class="main-footer__nav">
-          <nav class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Услуги</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Абонементы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Акции</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Тренеры</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">Расписание</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="main-footer__social">
-          <div class="social">
-            <ul class="social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <span class="visually-hidden">Вконтакте</span>
-                  <svg class="social-list__link-icon" width="20" height="20">
-                    <use xlink:href="img/icons/stack.svg#vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <span class="visually-hidden">Одноклассники</span>
-                  <svg class="social-list__link-icon" width="20" height="20">
-                    <use xlink:href="img/icons/stack.svg#ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <span class="visually-hidden">reddit</span>
-                  <svg class="social-list__link-icon" width="22" height="22">
-                    <use xlink:href="img/icons/stack.svg#reddit"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__logo-wrapper">
+            <a class="main-footer__logo">supergym</a>
           </div>
+          <div class="main-footer__nav">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Услуги</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Абонементы</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Акции</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Тренеры</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">Расписание</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-footer__social">
+            <div class="social">
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="social-list__link-icon" width="20" height="20">
+                      <use xlink:href="img/icons/stack.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <span class="visually-hidden">Одноклассники</span>
+                    <svg class="social-list__link-icon" width="20" height="20">
+                      <use xlink:href="img/icons/stack.svg#ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="social-list__link" href="#">
+                    <span class="visually-hidden">reddit</span>
+                    <svg class="social-list__link-icon" width="22" height="22">
+                      <use xlink:href="img/icons/stack.svg#reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/vendor.min.js"></script>

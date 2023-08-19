@@ -1,68 +1,69 @@
 .btn {
-  @include vp-1200 {
-    display: block;
-    flex-shrink: 0;
-    cursor: pointer;
-    box-sizing: border-box;
+  display: block;
+  flex-shrink: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+
+  &--hero {
+    grid-area: D;
+    width: 232px;
+    border: 4px solid #ffffff;
+    color: #ffffff;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px;
+    min-height: 61px;
+    margin-left: auto;
+    margin-top: 49px;
+  }
+
+
+
+  &--tickets {
+    color: #102654;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    border: 2px solid #102654;
+    padding: 27px 44px;
+  }
+
+  &--gradient {
+    background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
+    color: #FFF;
     border: none;
-    text-align: center;
+  }
 
-    &--hero {
-      grid-area: D;
-      width: 230px;
-      height: 57px;
-      border: 4px solid #fff;
-      color: #FFF;
-      font-family: $ff-roboto;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      text-decoration: none;
-      background: transparent;
-    }
+  &--super {
+    color: #FFF;
+    font-family: $ff-roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    width: 343px;
+    border: 4px solid #FFF;
+    padding: 29px;
+    grid-area: X;
+  }
 
-
-
-    &--tickets {
-      color: #102654;
-      font-family: $ff-roboto;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      border: 2px solid #102654;
-      padding: 27px 44px;
-    }
-
-    &--gradient {
-      background: var(--1, linear-gradient(151deg, #ED0233 0%, #003EB7 100%));
-      color: #FFF;
-      border: none;
-    }
-
-    &--super {
-      color: #FFF;
-      font-family: $ff-roboto;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      width: 343px;
-      border: 4px solid #FFF;
-      padding: 29px;
-      grid-area: X;
-    }
-
-    @include hover-focus {
-      opacity: 0.8;
-    }
+  @include hover-focus {
+    opacity: 0.8;
   }
 
   @include vp-1199 {
@@ -74,20 +75,11 @@
     text-align: center;
 
     &--hero {
-      grid-area: D;
-      width: 183px;
-      height: 57px;
-      border: 4px solid #fff;
-      color: #FFF;
-      font-family: $ff-roboto;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      text-decoration: none;
-      background: transparent;
+      margin: 0;
+      border: 4px solid #ffffff;
+      width: 189px;
+      margin-left: auto;
+      min-height: 60px;
     }
 
     &--tickets {
@@ -101,6 +93,7 @@
       text-transform: uppercase;
       border: 2px solid #102654;
       padding: 27px 44px;
+
     }
 
     &--gradient {

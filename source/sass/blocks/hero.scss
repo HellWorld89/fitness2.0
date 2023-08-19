@@ -1,6 +1,15 @@
 .hero {
-  @include vp-1200 {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
     width: 100%;
+    height: calc(100% + 62px);
+    left: 0;
+    top: -62px;
     background: conic-gradient(from 145deg at 16% 39%, #003D85 32deg, #B80027 313deg, #003D85 360deg);
   }
 
@@ -17,80 +26,73 @@
 }
 
 .hero__wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 457px 500px;
+  grid-template-areas:
+    "A B";
+  padding-bottom: 51px;
 
-  @include vp-1200 {
-    display: grid;
-    grid-template-columns: 457px 500px;
-    grid-template-areas:
-      "A B";
-    flex-wrap: wrap;
-    padding-top: 51px;
-    padding-bottom: 51px;
-  }
 
   @include vp-1199 {
+    width: 100%;
     display: grid;
-    grid-template-columns: 354px 324px;
+    grid-template-columns: 398px 324px;
     grid-template-areas:
       "A B";
-    flex-wrap: wrap;
-    padding-top: 82px;
-    padding-bottom: 82px;
+      padding-bottom: 82px;
+
   }
 
   @include vp-767 {
     display: block;
     width: 290px;
-    padding-top: 82px;
-    padding-bottom: 82px;
+    padding-bottom: 60px;
+
   }
 
 
 }
 
 .hero__box {
-
-  @include vp-1200 {
-    display: grid;
-    grid-template-areas:
-      ". B"
-      "A C"
-      ". D";
-    grid-area: A;
-    grid-template-columns: repeat(2, 1fr);
-    align-self: center;
-    justify-self: center;
-    padding: 121px 54px 45px 0;
-  }
+  display: grid;
+  grid-template-areas:
+    ". B"
+    "A C"
+    ". D";
+  grid-area: A;
+  grid-template-columns: 132px 263px;
+  padding-top: 115px;
+  align-self: start;
 
   @include vp-1199 {
-    display: grid;
-    grid-template-areas:
-      ". B"
-      "A C"
-      ". D";
-    grid-area: A;
+    padding: 0;
     align-self: center;
-    justify-self: center;
+    padding-top: 48px;
+    grid-template-columns: 157px 216px;
+
   }
 
   @include vp-767 {
     display: grid;
-    // grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 113px 176px;
     grid-template-areas:
       ". B"
       "A C"
       "D D";
-    grid-area: A;
-    align-self: center;
-    justify-self: center;
+      padding-top: 50px;
   }
 
 }
 
 .hero__image {
+  display: block;
   margin: 0;
   padding: 0;
+  background-image: cover;
 
   @include vp-1200 {}
 
@@ -102,52 +104,38 @@
 }
 
 .hero__box span {
-  @include vp-1200 {
-    grid-area: B;
-    justify-self: center;
-    color: #FFF;
-    font-family: $ff-alumni;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.44px;
-    text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 25px;
-  }
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-right: 50px;
+  grid-area: B;
+  justify-self: center;
+  color: #ffffff;
+  font-family: $ff-alumni;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  margin: 0;
 
   @include vp-1199 {
-    grid-area: B;
     justify-self: end;
-    color: #FFF;
-    font-family: $ff-alumni;
     font-size: 34px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
     letter-spacing: 1.02px;
-    text-transform: uppercase;
-    padding-bottom: 15px;
+    padding-right: 8px;
   }
 
   @include vp-767 {
     grid-area: B;
-    color: #FFF;
-    font-family: $ff-alumni;
     font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
     letter-spacing: 0.84px;
-    text-transform: uppercase;
+    padding-right: 4px;
   }
 
 }
 
 .hero__box p {
-  margin: 0;
-  @include vp-1200 {
     grid-area: A;
     align-self: center;
     color: #FFF;
@@ -158,40 +146,24 @@
     font-weight: 400;
     line-height: 150%;
     margin: 0;
-    padding: 0;
-  }
+    padding-top: 104px;
+
 
   @include vp-1199 {
-    grid-area: A;
-    align-self: center;
-    color: #FFF;
-    text-align: right;
-    font-family: $ff-roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+    padding-top: 40px;
   }
 
   @include vp-767 {
-    grid-area: A;
-    color: #FFF;
-    text-align: right;
-    font-family: $ff-roboto;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    justify-self: left;
   }
 
 
 }
 
 .hero__picture-box {
-  @include vp-1200 {}
 
-  @include vp-1199 {}
+  @include vp-1199 {
+    padding-top: 20px;
+  }
 
   @include vp-767 {}
 
@@ -199,45 +171,39 @@
 }
 
 .hero__box h1 {
-  @include vp-1200 {
-    grid-area: C;
-    color: #FFF;
-    text-align: right;
-    font-family: $ff-alumni;
-    font-size: 92px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 4.6px;
-    text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 80px;
-  }
+  padding: 0;
+  margin: 0;
+  grid-area: C;
+  color: #ffffff;
+  text-align: right;
+  font-family: $ff-alumni;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 109px;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  -webkit-text-stroke: medium;
+  letter-spacing: 4.6px;
+  padding-top: 17px;
 
   @include vp-1199 {
-    grid-area: C;
-    color: #FFF;
-    text-align: right;
-    font-family: $ff-alumni;
     font-size: 72px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 60px;
+    letter-spacing: 4.6px;
+    line-height: 85px;
+    padding-top: 10px;
+    padding-bottom: 38px;
+    text-transform: none;
+    -webkit-text-stroke: 3px;
   }
 
   @include vp-767 {
     grid-area: C;
-    color: #FFF;
-    text-align: right;
-    font-family: $ff-alumni;
     font-size: 72px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+    line-height: 83px;
+    padding-top: 18px;
+    padding-bottom: 27px;
+    letter-spacing: 3.6px;
   }
 
 }
